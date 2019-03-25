@@ -41,7 +41,7 @@
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
-          .register("/offline.js", { scope: "/" })
+          .register("/cached_site.js", { scope: "/" })
           .then(function(registration) {
             console.log("Service worker Registered");
           });
